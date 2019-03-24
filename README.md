@@ -1,4 +1,4 @@
-# Animated Slideshow Example
+# Flutter Animated Slideshow Example
 ![image](https://github.com/arleyhr/flutter_animated_slideshow_example/blob/master/assets/app.gif?raw=true)
 
 A new Flutter application.
