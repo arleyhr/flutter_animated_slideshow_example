@@ -18,7 +18,6 @@ List<AnimeImage> images = [
   AnimeImage(id: 4, category: imageCategories[0], source: "$baseAssets/naruto/4.jpg"),
   AnimeImage(id: 5, category: imageCategories[1], source: "$baseAssets/seven/1.jpg"),
   AnimeImage(id: 6, category: imageCategories[1], source: "$baseAssets/seven/2.jpg"),
-  AnimeImage(id: 7, category: imageCategories[1], source: "$baseAssets/seven/3.jpg"),
   AnimeImage(id: 8, category: imageCategories[1], source: "$baseAssets/seven/4.jpg"),
   AnimeImage(id: 9, category: imageCategories[1], source: "$baseAssets/seven/5.jpg"),
   AnimeImage(id: 10, category: imageCategories[1], source: "$baseAssets/seven/6.jpg"),
