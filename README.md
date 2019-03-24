@@ -1,4 +1,4 @@
-# animated_slider
+# animated_slideshow
 
 A new Flutter application.
 

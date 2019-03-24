@@ -21,6 +21,7 @@ class _AppState extends State<App> {
     _getImages(imageCategories[0]);
      ctrl.addListener((){
         int nextPage = ctrl.page.round();
+        print(ctrl.page);
         if(currentPage != nextPage) {
           setState(() {
             currentPage = nextPage;
@@ -44,6 +45,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
           color: Colors.white,
@@ -68,13 +70,16 @@ class _AppState extends State<App> {
 
 Widget buildCategoriesPage(String activeCategory, Function onSelectCategory) {
   List<Widget> children = [
-    Text(
-      "Category",
-      style: TextStyle(
-          color: Colors.blueAccent,
-          fontSize: 32.0,
-          fontWeight: FontWeight.bold
+    Container(
+      child: Text(
+        "Category",
+        style: TextStyle(
+            color: Colors.blueAccent,
+            fontSize: 32.0,
+            fontWeight: FontWeight.bold
+        ),
       ),
+      margin: EdgeInsets.only(bottom: 10.0),
     )
   ];
 
@@ -117,8 +122,8 @@ Widget buildStoryPage(AnimeImage item, bool isActive) {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         image: DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage(item.source)
+          fit: BoxFit.cover,
+          image: AssetImage(item.source),
         ),
         boxShadow: [
           BoxShadow(color: Colors.black87, blurRadius: blur, offset: Offset(offset, offset))
